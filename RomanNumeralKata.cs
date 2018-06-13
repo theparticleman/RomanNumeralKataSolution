@@ -23,7 +23,8 @@ namespace Tests
         {
             if (arabic == 0) return "";
             if (arabic >= 1 && arabic < 5) return "I" + Convert(arabic - 1);
-            return "V" + Convert(arabic - 5);
+            if (arabic >= 5 && arabic < 10) return "V" + Convert(arabic - 5);
+            return "X";
         }
     }
 }
