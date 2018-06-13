@@ -14,9 +14,14 @@ namespace Tests
         [TestCase(5, "V")]
         [TestCase(6, "VI")]
         [TestCase(10, "X")]
+        [TestCase(9, "IX")]
+        [TestCase(40, "XL")]
         [TestCase(50, "L")]
+        [TestCase(90, "XC")]
         [TestCase(100, "C")]
+        [TestCase(400, "CD")]
         [TestCase(500, "D")]
+        [TestCase(900, "CM")]
         [TestCase(1000, "M")]
         public void ConvertTests(int arabic, string roman)
         {
