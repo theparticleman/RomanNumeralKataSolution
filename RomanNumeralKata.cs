@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 
 namespace Tests
@@ -8,6 +9,14 @@ namespace Tests
         public void ZeroReturnsEmptyString()
         {
             Assert.That(ArabicToRoman.Convert(0), Is.EqualTo(""));
+        }
+    }
+
+    internal class ArabicToRoman
+    {
+        internal static string Convert(int arabic)
+        {
+            throw new NotImplementedException();
         }
     }
 }
