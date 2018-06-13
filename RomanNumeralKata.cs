@@ -19,7 +19,7 @@ namespace Tests
 
         [Test]
         public void FiveReturnsV()
-        {   
+        {
             Assert.That(ArabicToRoman.Convert(5), Is.EqualTo("V"));
         }
     }
@@ -29,7 +29,8 @@ namespace Tests
         internal static string Convert(int arabic)
         {
             if (arabic == 0) return "";
-            return "I";
+            if (arabic == 1) return "I";
+            return "V";
         }
     }
 }
