@@ -20,8 +20,8 @@ namespace Tests
         internal static string Convert(int arabic)
         {
             if (arabic == 0) return "";
-            if (arabic == 1) return "I";
-            if (arabic == 2) return "II";
+            if (arabic == 1) return "I" + Convert(0);
+            if (arabic == 2) return "I" + Convert(1);
             return "V";
         }
     }
