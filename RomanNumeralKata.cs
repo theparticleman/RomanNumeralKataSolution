@@ -12,24 +12,6 @@ namespace Tests
         {
             Assert.That(ArabicToRoman.Convert(arabic), Is.EqualTo(roman));
         }
-
-        [Test]
-        public void ZeroReturnsEmptyString()
-        {
-            Assert.That(ArabicToRoman.Convert(0), Is.EqualTo(""));
-        }
-
-        [Test]
-        public void OneReturnsI()
-        {
-            Assert.That(ArabicToRoman.Convert(1), Is.EqualTo("I"));
-        }
-
-        [Test]
-        public void FiveReturnsV()
-        {
-            Assert.That(ArabicToRoman.Convert(5), Is.EqualTo("V"));
-        }
     }
 
     internal class ArabicToRoman
