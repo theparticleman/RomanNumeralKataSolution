@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 
 namespace Tests
@@ -30,9 +31,11 @@ namespace Tests
         internal static string Convert(int arabic)
         {
             if (arabic == 0) return "";
-            if (arabic >= 1 && arabic < 5) return "I" + Convert(arabic - 1);
-            if (arabic >= 5 && arabic < 10) return "V" + Convert(arabic - 5);
-            return "X";
+            var conversion = lookup.First(x => x.arabic <= arabic);
+            return conversion.roman + Convert(arabic - conversion.arabic);
+            // if (arabic >= 1 && arabic < 5) return "I" + Convert(arabic - 1);
+            // if (arabic >= 5 && arabic < 10) return "V" + Convert(arabic - 5);
+            // return "X";
         }
     }
 }
