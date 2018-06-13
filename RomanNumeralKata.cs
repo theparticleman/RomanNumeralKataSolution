@@ -5,9 +5,9 @@ namespace Tests
     public class Tests
     {
         [Test]
-        public void Test1()
+        public void ZeroReturnsEmptyString()
         {
-            Assert.Pass();
+            Assert.That(ArabicToRoman.Convert(0), Is.EqualTo(""));
         }
     }
 }
