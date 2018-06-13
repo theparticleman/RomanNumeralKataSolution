@@ -10,6 +10,12 @@ namespace Tests
         {
             Assert.That(ArabicToRoman.Convert(0), Is.EqualTo(""));
         }
+
+        [Test]
+        public void OneReturnsI()
+        {
+            Assert.That(ArabicToRoman.Convert(1), Is.EqualTo("I"));
+        }
     }
 
     internal class ArabicToRoman
