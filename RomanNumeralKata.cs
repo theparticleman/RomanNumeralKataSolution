@@ -7,6 +7,7 @@ namespace Tests
     {
         [TestCase(0, "")]
         [TestCase(1, "I")]
+        [TestCase(2, "II")]
         [TestCase(5, "V")]
         public void ConvertTests(int arabic, string roman)
         {
