@@ -13,6 +13,7 @@ namespace Tests
         [TestCase(5, "V")]
         [TestCase(6, "VI")]
         [TestCase(10, "X")]
+        [TestCase(50, "L")]
         public void ConvertTests(int arabic, string roman)
         {
             Assert.That(ArabicToRoman.Convert(arabic), Is.EqualTo(roman));
