@@ -33,9 +33,6 @@ namespace Tests
             if (arabic == 0) return "";
             var conversion = lookup.First(x => x.arabic <= arabic);
             return conversion.roman + Convert(arabic - conversion.arabic);
-            // if (arabic >= 1 && arabic < 5) return "I" + Convert(arabic - 1);
-            // if (arabic >= 5 && arabic < 10) return "V" + Convert(arabic - 5);
-            // return "X";
         }
     }
 }
