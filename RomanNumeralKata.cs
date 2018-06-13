@@ -21,6 +21,7 @@ namespace Tests
         {
             if (arabic == 0) return "";
             if (arabic == 1) return "I";
+            if (arabic == 2) return "II";
             return "V";
         }
     }
