@@ -16,7 +16,7 @@ namespace Tests
     {
         internal static string Convert(int arabic)
         {
-            throw new NotImplementedException();
+            return "";
         }
     }
 }
