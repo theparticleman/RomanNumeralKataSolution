@@ -5,6 +5,14 @@ namespace Tests
 {
     public class Tests
     {
+        [TestCase(0, "")]
+        [TestCase(1, "I")]
+        [TestCase(5, "V")]
+        public void ConvertTests(int arabic, string roman)
+        {
+            Assert.That(ArabicToRoman.Convert(arabic), Is.EqualTo(roman));
+        }
+
         [Test]
         public void ZeroReturnsEmptyString()
         {
