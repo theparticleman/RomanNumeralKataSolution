@@ -22,7 +22,8 @@ namespace Tests
     {
         internal static string Convert(int arabic)
         {
-            return "";
+            if (arabic == 0) return "";
+            return "I";
         }
     }
 }
