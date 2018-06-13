@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace Tests
@@ -19,6 +20,13 @@ namespace Tests
 
     internal class ArabicToRoman
     {
+        static List<(int arabic, string roman)> lookup = new List<(int, string)>
+        {
+            (10, "X"),
+            (5, "V"),
+            (1, "I")
+        };
+
         internal static string Convert(int arabic)
         {
             if (arabic == 0) return "";
