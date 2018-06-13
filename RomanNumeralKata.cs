@@ -27,6 +27,9 @@ namespace Tests
     {
         static List<(int arabic, string roman)> lookup = new List<(int, string)>
         {
+            (1000, "M"),
+            (500, "D"),
+            (100, "C"),
             (50, "L"),
             (10, "X"),
             (5, "V"),
